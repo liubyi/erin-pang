@@ -43,6 +43,17 @@
 
 }
 
+#block .erin {
+  margin: 20%px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  color - rgb(51,51,51);
+  margin-bottom: 30px;
+
+}
+
 #block .photo img {
   display: block;
   margin-top: 70px;

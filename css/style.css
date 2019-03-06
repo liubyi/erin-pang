@@ -1,0 +1,325 @@
+
+.section {
+  margin-top: 0px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  color - rgb(51,51,51);
+  margin-bottom: 20px;
+
+}
+
+.bio {
+  margin-top: 20px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  color - rgb(51,51,51);
+}
+
+#block {
+  position: relative;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 30px;
+  /* Add shadows to create the "card" effect */
+/*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-bottom: 30px;*/
+}
+
+#block .section {
+  margin: 30px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  color - rgb(51,51,51);
+  margin-bottom: 30px;
+
+}
+
+
+#block .photo img {
+  display: block;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#block .section strong {
+  font-weight: bold;
+}
+
+
+
+
+
+
+ul.nav {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;   /* horizontal alignment */
+  align-items: center; 
+  font-size: calc(0.5vw + 1.5vmin); /*adjust*/
+  list-style-type: none;
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+li {
+  float: left;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  background-color: #969288;
+}
+
+.active {
+  background-color: #7c7971;
+}
+
+
+/* added */
+#header {
+  margin-top: -20px;
+  margin-left: -20px;  /* used to make it flush against */
+  margin-right: -20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#header img {
+  position: relative;
+  text-align: center;
+/*  width: 100%;
+  height: 500px;*/
+  height: 100%;
+  width: 100%;
+
+
+}
+
+#header .box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 780px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  padding:0px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  color: white;
+  background-color:rgba(0,0,0,0.4);
+  text-decoration: none;
+}
+
+.title .text a{
+  text-decoration: none;
+}
+
+/* Added */ 
+#header .open {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  font-style: 'Roboto Slab', serif;
+  font-size: 36px;
+  color: white;
+  max-width: 780px;
+}
+
+
+.grid {
+  margin: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, minmax(300px,1fr));
+  grid-auto-rows: 20px;
+}
+
+
+
+
+/* Non-grid specific CSS */  
+body {
+  margin: 20px;
+	color: #374046;
+	background-color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.15em;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+.item {
+  background-color: #ffffff;
+}
+
+.photothumb{
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.title {
+  padding: 20px;
+
+ }
+
+.title h3{
+  font-size: 1.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.project .title{
+  background-color: #607D8B;
+}
+
+.blog .title{
+  background-color: #ff9800;
+}
+
+.photo .title{
+  background-color: #f44336;
+}
+
+.desc{
+  padding: 10px 10px 5px 10px;
+}
+
+.desc img{
+  width: 50%;
+  margin: 0 10px 10px 0;
+  float: left;
+}
+
+.desc p{
+  margin-bottom: 10px;
+}
+
+
+.content {
+  position: relative;
+/*  width: 50%;
+*/}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.content:hover .middle {
+  opacity: 1;
+}
+
+.content:hover .photothumb {
+  opacity:0.4; /* how much transparent you want image to be*/
+  filter:alpha(opacity=40); /* browser fix*/
+  -webkit-opacity:0.4; /*vendor prefixes for website browsers*/
+  -moz-opacity:0.4; /* same as above, edited thankx to @ Daniel_Lisik  */
+}
+
+
+
+.text {
+  background-color: white;
+  font-family: "Josefin Sans";
+  color: #7c7971;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-width: 10px;
+  border-color: red;
+}
+
+.text a{
+  text-decoration: none;
+}
+
+.text:hover {
+  text-decoration: none;
+  background-color: #7c7971;
+  color: white;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-width: 10px;
+  border-color: red;
+}
+
+.text:hover a{
+  text-decoration: none;
+}
+
+.title a{
+  color:white;
+  text-decoration: none;
+}
+
+.title:hover a{
+  color:white;
+  text-decoration: none;
+}
+
+
+
+/* Medium screens */
+@media only screen and (max-width: 650px) {
+  ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 20px;
+  }
+
+}
+
+.footer {
+   position: fixed;
+   font-size: 80%;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
